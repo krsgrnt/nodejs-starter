@@ -8,18 +8,18 @@
     "prettier": "prettier --write **/*.js"
   },
   "devDependencies": {
-    "@babel/cli": "^6.26.0",
-    "@babel/core": "^7.1.6",
-    "@babel/node": "^7.0.0",
-    "@babel/polyfill": "^6.26.0",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/register": "^6.26.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.7"
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/node": "7.2.2",
+    "@babel/polyfill": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/register": "7.4.4",
+    "mocha": "6.1.4",
+    "nodemon": "1.19.0"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4"
+    "cors": "2.8.5",
+    "dotenv": "8.0.0",
+    "express": "4.16.4"
   }
 }
