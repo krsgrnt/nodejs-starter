@@ -1,5 +1,6 @@
 /node_modules
 /dist
 /.cache
+/ssl
 .DS_Store
 .env
