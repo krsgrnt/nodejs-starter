@@ -1,7 +1,19 @@
-FROM node:10
-WORKDIR /usr/src/app
-COPY . .
-RUN npm install
-RUN npm run build
-EXPOSE 80
-CMD [ "node", "./dist/index.js"]
+FROM node:12-alpine
+
+RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+
+WORKDIR /home/node/app
+
+COPY package.json yarn.lock ./
+
+USER node
+
+RUN yarn install
+
+COPY --chown=node:node . .
+
+RUN yarn build
+
+EXPOSE 8080
+
+CMD [ "node", "dist/index.js" ]

@@ -33,3 +33,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 // em.emit('knock', "who's there?");
 
 // console.log(process.env.MY_DATABASE_PASSWORD);
+app.post('/post/:userId', function(req, res) {
+    console.log(req.body);
+    res.send('POST request to the homepage');
+});
